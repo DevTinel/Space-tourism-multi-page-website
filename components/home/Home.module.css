@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.containerHome {
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  padding-top: 300px;
+}
+.containerHome img {
+  width: 100%;
+}
+.containerHome h1 {
+  font-family: "Cinzel", serif;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 6px;
+  color: #898c9f !important;
+}
+.containerHome h1 span {
+  font-size: 10rem;
+  display: block;
+  margin: 5px 0;
+  font-weight: 100;
+  font-family: "Cinzel", serif;
+  color: #fff;
+}
+.containerHome p {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 45ch;
+  font-size: 22px;
+  color: #898c9f;
+  line-height: 1.8;
+}
+.explore {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+}
+.explore p {
+  font-size: 2.5rem;
+  color: #000;
+  font-family: "Cinzel", serif;
+}
+a {
+  border: none;
+}

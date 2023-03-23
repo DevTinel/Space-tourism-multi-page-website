@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  position: absolute;
+  width: 100%;
+  padding-top: 70px;
+  right: 0px;
+}
+nav span {
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  gap: 100px;
+  backdrop-filter: blur(100px);
+  padding: 50px 0px;
+  width: 55%;
+  color: #fff;
+  padding-left: 10%;
+}
+
+.navLinksItem {
+  cursor: pointer;
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+.navLinks::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../assets/shared/Frame\ 1.svg");
+  width: 600px;
+  height: 1px;
+  left: -550px;
+  top: 60px;
+}
+nav img {
+  padding-left: 180px;
+}
+a {
+  border: none;
+}
