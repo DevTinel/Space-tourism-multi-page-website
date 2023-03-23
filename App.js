@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/home/Home";
 import { Header } from "./components/header/Header";
-import Destination from "./components/destination/Destination";
+import Destination from "./components/destination/celestialsBodies";
 import Crew from "./components/crew/Crew";
 import Technology from "./components/technology/Technology";
 
