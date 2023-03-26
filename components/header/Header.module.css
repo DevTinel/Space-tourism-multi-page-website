@@ -1,25 +1,37 @@
+header {
+  width: 1440px;
+  background-color: #fff;
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   position: absolute;
   width: 100%;
-  padding-top: 50px;
-  right: 0px;
+  color: #fff;
+  padding-top: 40px;
 }
 nav span {
   font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2.7px;
 }
 
 .navLinks {
+  position: relative;
   display: flex;
-  gap: 100px;
-  backdrop-filter: blur(100px);
+  gap: 48px;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.1);
+
   padding: 50px 0px;
-  width: 55%;
+  width: 830px;
+  height: 96px;
   color: #fff;
-  padding-left: 10%;
+  justify-content: flex-end;
+  padding-right: 167px;
+  align-items: center;
 }
 
 .navLinksItem {
@@ -28,20 +40,23 @@ nav span {
   padding: 5px;
   gap: 10px;
 }
+nav img {
+  padding-left: 180px;
+  position: relative;
+}
 .navLinks::before {
   position: absolute;
   content: "";
   background-image: url("../../assets/shared/Frame\ 1.svg");
-  width: 600px;
+  width: 473px;
+  left: -430px;
   height: 1px;
-  left: -550px;
-  top: 60px;
-}
-nav img {
-  padding-left: 180px;
+  top: 50%;
 }
 a {
   border: none;
+  font-weight: 200;
+  font-size: 16px;
   position: relative;
 }
 
@@ -51,6 +66,22 @@ a {
   background-color: #fff;
   height: 3px;
   width: 100%;
-  top: 75px;
+  top: 60px;
   left: -1px;
+}
+@media (max-width: 1300px) {
+  nav {
+    padding-top: 0px;
+  }
+  nav img {
+    padding-left: 40px;
+    position: relative;
+    margin-top: 10px !important;
+  }
+}
+
+@media (max-width: 1550px) {
+  .navLinks::before {
+    display: none;
+  }
 }

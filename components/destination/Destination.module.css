@@ -15,19 +15,20 @@
   flex-direction: column;
 }
 .aboutMars {
-  font-size: 20px;
-  width: 45ch;
-  color: #b6bbc6;
-  line-height: 1.5;
+  font-size: 18px;
+  width: 444px;
+  color: #d0d6f9;
+  line-height: 2;
   margin-bottom: 10px;
   border-bottom: 1px solid #898c9f;
   padding-bottom: 50px;
   margin-bottom: 30px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-weight: normal;
+  font-family: "Barlow", sans-serif;
 }
 .marsContainer h1 {
-  font-size: 5rem;
-  font-family: "Cinzel", serif;
+  font-size: 100px;
+  font-family: "Bellefair", serif;
   font-weight: 100;
 }
 .about {
@@ -39,35 +40,43 @@
   display: flex;
   gap: 100px;
 }
+.title span {
+  color: #84868c;
+  font-weight: bold;
+  display: block;
+  font-size: 28px;
+  font-family: "Barlow Condensed", sans-serif;
+}
 .title {
   display: flex;
   gap: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 5px;
-  font-size: 16px;
+  font-size: 28px;
   font-weight: 100;
   margin-bottom: 100px;
   width: 100%;
+  align-items: center;
   margin-top: 50px;
   padding-left: 320px;
 }
-.title span {
-  color: #84868c;
-  font-weight: 800;
-  display: block;
-  font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
+.title h1 {
+  font-weight: normal;
+  font-size: 28px;
 }
+
 .celestialsBodies {
   display: flex;
-  font-family: "Roboto", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
   margin-bottom: 30px;
-  gap: 50px;
+  gap: 35px;
 }
 .celestialsBodies p {
   cursor: pointer;
   border: 3px solid transparent;
   padding-bottom: 10px;
+  color: #d0d6f9;
 }
 .celestialsBodies form {
   display: flex;
@@ -89,16 +98,48 @@ input[type="radio"]:checked {
 }
 
 .distanceMonths p {
-  color: #b6bbc6;
+  color: #d0d6f9;
   margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 100;
 }
 .distanceMonths span {
-  font-size: 1.5rem;
+  font-size: 28px;
   font-weight: 100;
-  font-family: "Cinzel", serif;
+  font-family: "Bellefair", serif;
   letter-spacing: 2px;
+}
+@media (max-width: 1300px) {
+  .destinationContainer {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+    height: 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 100;
+    width: 100%;
+    margin-top: 250px;
+    margin-left: -20%;
+  }
+  .marsContainer {
+    margin-top: -250px !important;
+    margin-bottom: 200px;
+  }
 }

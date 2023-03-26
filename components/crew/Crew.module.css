@@ -12,7 +12,11 @@
   padding-top: 220px;
 }
 .crewContainer p {
-  width: 44ch;
+  width: 444px;
+  height: 128px;
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
 }
 .crewContainer img {
   position: absolute;
@@ -23,40 +27,43 @@
 .crewTitle {
   display: flex;
   gap: 30px;
+  font-style: 28px;
   align-items: center;
-  margin-bottom: 180px;
+  margin-bottom: 154px;
 }
 .crewTitle h1 {
-  font-family: "Roboto";
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 4px;
-  font-weight: bold;
+  font-weight: normal;
 }
 .crewTitle span {
   color: #888;
   font-weight: bold;
   display: block;
-  font-size: 26px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 4px;
+  font-size: 28px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .crewContainer h2 {
   color: #888c95;
-  font-weight: 100;
-  font-size: 2rem;
-  font-family: "Cinzel", serif;
+  font-weight: normal;
+  font-size: 32px;
+  font-family: "Bellefair", serif;
   margin-bottom: 20px;
 }
 .crewContainer p {
-  font-family: "Roboto";
-  line-height: 1.5;
-  width: 441px;
-  color: #e8e9f4;
+  font-family: "Barlow ", sans-serif;
+  line-height: 2;
+  width: 444px;
+  font-weight: 100;
+  color: #d0d6f9;
   font-size: 18px;
   height: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .nameH1 {
-  font-size: 4rem;
-  font-family: "Cinzel", serif;
+  font-size: 56px;
+  font-family: "Bellefair", serif;
   font-weight: 100;
   letter-spacing: 4;
   margin-bottom: 50px;
@@ -74,4 +81,50 @@
 }
 .selected {
   background-color: white !important;
+}
+@media (max-width: 1600px) {
+  .crewContainer {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+  .crewContainer img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(35%);
+    margin-top: -40px;
+  }
+  .crewTitle {
+    align-items: flex-start;
+    margin-bottom: 80px;
+    margin-left: -200px;
+    width: 100%;
+  }
+
+  .crewContainer h2 {
+    text-align: center;
+  }
+  .nameH1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .crewContainer p {
+    line-height: 2;
+    width: 444px;
+    text-align: center;
+    font-size: 18px;
+    height: 100px;
+    margin-bottom: 100px;
+  }
+  .spanDiv {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
 }
